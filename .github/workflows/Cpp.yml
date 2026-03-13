@@ -7,7 +7,7 @@ on:
     branches:
       - main
   # schedule:
-    - cron: # "* * * * *" # runs every minuet
+    # - cron: # "* * * * *" # runs every minuet
 jobs:
   build:
     "runs-on": "ubuntu-latest"
