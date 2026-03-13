@@ -11,12 +11,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
-    - name: Checkout repository
-      uses: actions/checkout@4
-    - name: Install compiler
-      run: sudo apt install g++
-    - name: Compile
-      run: g++ main.cpp -o main
-    - name: Run Program
-      run: ./main
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@4
+      - name: Install compiler
+        run: sudo apt install g++
+      - name: Compile
+        run: g++ main.cpp -o main
+      - name: Run Program
+        run: ./main
