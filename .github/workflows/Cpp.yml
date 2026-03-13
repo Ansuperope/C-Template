@@ -1,12 +1,12 @@
 name: Cpp Yml
-"on":
+on:
   push:
     branches:
       - main
   pull_request:
     branches:
       - main
-  schedule:
+  # schedule:
     - cron: # "* * * * *" # runs every minuet
 jobs:
   build:
